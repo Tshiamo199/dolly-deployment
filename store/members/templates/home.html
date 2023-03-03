@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% extends 'main.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    
+
+<!--<div class="w3-content w3-section" >
+        <video class="myVideo" loop autoplay muted>
+          <source src="{% static 'videos/chicken.mp4' %}" type="video/mp4" >
+        </video>-->
+</div>
+
+<video width="100%" height="1000" loop autoplay muted>
+  <source src="{% static 'videos/chicken.mp4' %}" type="video/mp4">
+</video>
+   
+
+    
+ <div class="intro" style="width: 100%">
+    <h2>Hello and welcome!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem perferendis doloribus esse, sunt fugiat ut aperiam id, veritatis illum doloremque natus ratione dignissimos consequuntur in est vel. Laborum, adipisci dolorum?
+    Illo earum aspernatur eligendi, nobis neque fugit corrupti saepe voluptatem ab delectus nesciunt tenetur sequi? Autem corporis, nulla laboriosam dicta recusandae sunt architecto eius accusamus illum est inventore. Recusandae, assumenda?
+    Quia deserunt laborum doloribus, porro numquam in nemo, quam nesciunt ut possimus sed animi voluptas molestiae. Aliquid maiores repudiandae aut quo, culpa illo ipsum optio alias quisquam doloremque unde corporis.</p>
+    <button class="btn info"><a href="about/" >More</a></button> 
+  </div>
+  
+  
+    <div class="grid-container">
+      <div><h2>Good Services</h2>
+        <p>With more than 12 awards won including the “people’s award for all year delivery and best paper product for 2018 & 2019”, We continue to provide quality service all year round. </p>
+      </div>
+
+       <div><h2> Best Prices Gurentee</h2>
+        <p> We dominate the market because we offer our quality products at the best prices.Our cheapest prices make sure we reach every corner,tribe and race.Buy from us and save more</p></div>
+       
+
+        <div><h2>Fast delivery</h2>
+        <p>With more than 173 trucks and vans available at every branch,we reach you right at your door-step at very cheap delivery fees.</p></div>  
+    </div>
+</div>
+
+</div>
+
+
+
+  <!-- Full-width images with number and caption text -->
+  <!--<div class="w3-content w3-section" style="max-width:100%">
+    <img class="mySlides w3-animate-top" src="{% static 'images/c.jpg' %}" style="width:100%">
+    <img class="mySlides w3-animate-bottom" src="{% static 'images/another.jpg' %}" style="width:100%">
+  </div>
+  
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000);    
+    }
+ </script>-->
+
+  
+  <h2>Services</h2>
+  <div class="pic-container">
+    <div>
+      <img src= "{% static 'images/page-1_img01.jpg' %}" style="height: 200px;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt omnis sunt similique, cum nihil fugiat? Ipsum sit perspiciatis vero est impedit enim eligendi saepe,ratione voluptatem quam obcaecati quod!Esse vero quia porro consequatur,unde eum libero numquam quisquam assumenda corporis dolores minima tempore maiores.Ex laboriosam consequuntur unde accusantium laudantium soluta accusamus placeat voluptatum deserunt eum?Facere, natus.Eos odit commodi delectus autem fugiat nam consequatur repellat quaerat ad sequi omnis, </p>
+      
+    </div>
+    <div>
+      <img src= "{% static 'images/page-1_img02.jpg' %}" style="height: 200px;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt omnis sunt similique, cum nihil fugiat? Ipsum sit perspiciatis vero est impedit enim eligendi saepe, ratione voluptatem quam obcaecati quod!
+      Esse vero quia porro consequatur, unde eum libero numquam quisquam assumenda corporis dolores minima tempore maiores. Ex laboriosam consequuntur unde accusantium laudantium soluta accusamus placeat voluptatum deserunt eum? Facere, natus.
+      Eos odit commodi delectus autem fugiat nam consequatur repellat quaerat ad sequi omnis, nobis sapiente suscipit sunt adipisci tenetur itaque quisquam, repellendus consectetur beatae cupiditate iste. Quas illo voluptates ea?</p>
+    </div>
+    <div>
+      <img src= "{% static 'images/page-1_img03.jpg' %}" style="height: 200px;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt omnis sunt similique, cum nihil fugiat? Ipsum sit perspiciatis vero est impedit enim eligendi saepe, ratione voluptatem quam obcaecati quod!
+      Esse vero quia porro consequatur, unde eum libero numquam quisquam assumenda corporis dolores minima tempore maiores. Ex laboriosam consequuntur unde accusantium laudantium soluta accusamus placeat voluptatum deserunt eum? Facere, natus.
+      Eos odit commodi delectus autem fugiat nam consequatur repellat quaerat ad sequi omnis, nobis sapiente suscipit sunt adipisci tenetur itaque quisquam, repellendus consectetur beatae cupiditate iste. Quas illo voluptates ea?</p>
+    </div>
+
+  </div>
+
+  <div class="content">
+    <div>
+    <h2>GET IN TOUCH</h2>
+    <p>8901 Marmora Road
+      Glasgow, DO4 89GR.
+      
+      Freephone: +1 800 559 6580
+      Telephone: +1 800 603 6035
+      FAX: +1 800 889 9898
+      
+      E-mail: mail@demolink.org</p>
+      </div>
+    <p>© 2022 DOLLY'S FARM. Privacy Policy</p>
+    
+    <div>
+      <h2>FOLLOW US</h2>
+      <img href="https://www.facebook.com/tshia.misst" src= "{% static 'images/facebook.svg' %}" style="height: 30px;">
+      <img src= "{% static 'images/twitter.svg' %}" style="height: 30px;">
+      <img src= "{% static 'images/pinterest.svg' %}" style="height: 30px;">
+      </div>
+       <div>
+      <h2>JOIN NEWLESTER</h2>
+       <p> And always stay informed of the latest company news and events!</p>
+       <button class="btn info"><a href="about/" >Sing Up</a></button>
+      </div>
+  </div>
+  
+
+ 
+    
+
+{% endblock content %}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% extends 'main.html' %}
+{% load static %}
+
+    {% block content %}
+ 
+    <h1>About our farm</h1>
+    <center>
+        <marquee  behavior="alternate" direction="left">          
+              <img src="{% static 'images/c.jpg' %}"
+               style="width:100%" style="height: 200px;"> 
+        </marquee>  
+    </center>
+      
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae quasi quibusdam exercitationem, velit voluptatum provident, veniam nulla iusto sint vitae, nesciunt quaerat iure molestias enim dolorem vel magnam. Officiis?
+    Veritatis quibusdam non ipsa quis debitis ipsam, ab fugiat cum quasi, optio ex mollitia qui vitae impedit possimus magnam explicabo officia. Explicabo enim voluptatem culpa accusantium asperiores deserunt eligendi assumenda?</p>
+       
+    
+  <h2>What we can offer</h2>
+  <div class="pic-container">
+    <div>
+      <img src= "{% static 'images/page-1_img01.jpg' %}" style="height: 200px;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt omnis sunt similique, cum nihil fugiat? Ipsum sit perspiciatis vero est impedit enim eligendi saepe,ratione voluptatem quam obcaecati quod!Esse vero quia porro consequatur,unde eum libero numquam quisquam assumenda corporis dolores minima tempore maiores.Ex laboriosam consequuntur unde accusantium laudantium soluta accusamus placeat voluptatum deserunt eum?Facere, natus.Eos odit commodi delectus autem fugiat nam consequatur repellat quaerat ad sequi omnis, </p>
+      
+    </div>
+    <div>
+      <img src= "{% static 'images/page-1_img02.jpg' %}" style="height: 200px;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt omnis sunt similique, cum nihil fugiat? Ipsum sit perspiciatis vero est impedit enim eligendi saepe, ratione voluptatem quam obcaecati quod!
+      Esse vero quia porro consequatur, unde eum libero numquam quisquam assumenda corporis dolores minima tempore maiores. Ex laboriosam consequuntur unde accusantium laudantium soluta accusamus placeat voluptatum deserunt eum? Facere, natus.
+      Eos odit commodi delectus autem fugiat nam consequatur repellat quaerat ad sequi omnis, nobis sapiente suscipit sunt adipisci tenetur itaque quisquam, repellendus consectetur beatae cupiditate iste. Quas illo voluptates ea?</p>
+    </div>
+    <div>
+      <img src= "{% static 'images/page-1_img03.jpg' %}" style="height: 200px;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt omnis sunt similique, cum nihil fugiat? Ipsum sit perspiciatis vero est impedit enim eligendi saepe, ratione voluptatem quam obcaecati quod!
+      Esse vero quia porro consequatur, unde eum libero numquam quisquam assumenda corporis dolores minima tempore maiores. Ex laboriosam consequuntur unde accusantium laudantium soluta accusamus placeat voluptatum deserunt eum? Facere, natus.
+      Eos odit commodi delectus autem fugiat nam consequatur repellat quaerat ad sequi omnis, nobis sapiente suscipit sunt adipisci tenetur itaque quisquam, repellendus consectetur beatae cupiditate iste. Quas illo voluptates ea?</p>
+    </div>
+
+  </div>
+
+  
+  </div>
+  <div class="content">
+    <div>
+    <h2>GET IN TOUCH</h2>
+    <p>8901 Marmora Road
+      Glasgow, DO4 89GR.
+      
+      Freephone: +1 800 559 6580
+      Telephone: +1 800 603 6035
+      FAX: +1 800 889 9898
+      
+      E-mail: mail@demolink.org</p>
+      </div>
+    <p>© 2022 DOLLY'S FARM. Privacy Policy</p>
+    
+    <div>
+      <h2>FOLLOW US</h2>
+      <img src= "{% static 'images/facebook.svg' %}" style="height: 30px;">
+      <img src= "{% static 'images/twitter.svg' %}" style="height: 30px;">
+      <img src= "{% static 'images/pinterest.svg' %}" style="height: 30px;">
+      </div>
+       <div>
+        <h2>JOIN NEWLESTER</h2>
+       <p> Contact us here</p>
+       <button class="btn info"><a href="contact/" >Sing Up</a></button>
+      </div>
+  </div>
+  
+    {% endblock content %}

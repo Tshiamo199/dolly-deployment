@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+</div>  
+   
+    <h1>
+    Contact Us
+   </h1>
+
+   <center>
+
+   <div class="map">
+     
+  <a href="https://www.google.com/maps/@-25.5470691,28.1005518,15z"><img src="{% static 'images/map.jpg' %}"></a>
+   </div>
+
+    <div class="row">
+	<div class="col-lg-2">
+    
+        <hr>
+        <p>Contact Information:</p>
+        <hr>
+ 
+      
+         <div>
+           <h2>GET IN TOUCH</h2>
+           <p>8901 Marmora Road
+             Glasgow, DO4 89GR.
+             
+             Freephone: +1 800 559 6580
+             Telephone: +1 800 603 6035
+             FAX: +1 800 889 9898
+             
+             E-mail: mail@demolink.org</p>
+             </div>
+        
+    </div>
+
+    <div class="col-lg-2">
+    
+
+      <div id="contact-form">
+        <hr>
+        <p>Contact Form:</p>
+        <hr>
+        <div class="form-field">
+          <input required class="form-control" type="text" name="name" placeholder="Name..">
+        </div>
+        <div class="form-field">
+          <input required class="form-control" type="email" name="email" placeholder="Email..">
+        </div>
+      </div>
+        <div class="form-field">
+            <textarea required class="form-control" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+ 
+        </div>
+
+              <hr>
+              <input id="myBtn" class="btn btn-success btn-block" type="submit" >
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Information Loaded .....</p>
+                </div>
+              
+              </div>
+            </form>
+    </div>
+ </div>
+ <br>
+ <br>
+
+</center>
+
+	
+<div class="content">
+  <div>
+  <h2>GET IN TOUCH</h2>
+  <p>8901 Marmora Road
+    Glasgow, DO4 89GR.
+    
+    Freephone: +1 800 559 6580
+    Telephone: +1 800 603 6035
+    FAX: +1 800 889 9898
+    
+    E-mail: mail@demolink.org</p>
+    </div>
+  <p>© 2022 DOLLY'S FARM. Privacy Policy</p>
+  
+  <div>
+    <h2>FOLLOW US</h2>
+    <img src= "{% static 'images/facebook.svg' %}" style="height: 30px;">
+    <img src= "{% static 'images/twitter.svg' %}" style="height: 30px;">
+    <img src= "{% static 'images/pinterest.svg' %}" style="height: 30px;">
+    </div>
+     <div>
+    <h2>JOIN NEWLESTER</h2>
+     <p> And always stay informed of the latest company news and events!</p>
+     <button class="btn info"><a href="about/" >Sing Up</a></button>
+    </div>
+</div>
+
+
+
+  
+{% endblock content %}
+
